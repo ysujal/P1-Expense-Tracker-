@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 5px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: insert 0 0 5px gray;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #3f4e6e;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #3f4e6e;
+}
+
+
+
+.plus{
+    border: 1px solid green;
+    h4{
+        color: darkgreen;
+    }
+    span{
+        i{
+            color: darkgreen;
+        }
+    }
+}
+
+.minus{
+    border: 1px solid red;
+    h4{
+        color: red;
+    }
+    span{
+        i{
+            color: red;
+        }
+    }
+}
+body{
+    font-family: "poppins" , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: rgb(247, 241, 242);
+    width: 75rem;
+    padding: 5rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0,0, 0.35);
+    
+.expense-title{
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    color: black-50;
+}
+.balance{
+    width: 65rem;
+    height: 20rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0,0, 0.35);
+    h1{
+        font-size: 7rem;
+        font-weight: bold;
+        color: rgb(22, 36, 119);
+
+    }
+    h4{
+        font-size: 2.5rem;
+        font-weight: medium;
+        color: black;
+    }
+    
+}
+.inc-exp-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .income{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30rem;
+        height: 13rem;
+        background-color: aliceblue;
+        padding: 0rem 3rem 0rem ;
+        border: 0.3rem solid rgb(22, 165, 51);
+
+        h2{
+           font-size: 3.5rem; 
+           color: rgb(25, 197, 63);
+        }
+        h4{
+            font-size: 1.8rem;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+        }
+    }
+    .expense{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30rem;
+        height: 13rem;
+        background-color: aliceblue;
+        padding: 0rem , 3rem , 0rem ,3rem;
+        border: 0.3rem solid red;
+        h2{
+            font-size: 3.5rem; 
+            color: rgb(215, 42, 62);
+         }
+         h4{
+             font-size: 1.8rem;
+             color: rgb(0, 0, 0);
+             text-transform: uppercase;
+         }
+     }
+
+    }
+}
+
+.history{
+    .title-history{
+        font-size: 3.5rem;
+        color: black;
+        padding-bottom: 2.5rem;
+ }
+ .history-box{
+    height: 34rem;
+    overflow: hidden;
+    &:hover{
+        overflow-y: scroll;
+padding-right: 1.5rem;
+    }
+}
+li{
+    list-style: none;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    h4{
+        font-size: 2rem;
+
+    }
+    span{
+        font-size: 2rem;
+        i{
+            margin-left: 0.5rem;
+
+
+        }
+    }
+}
+}
+
+
+.transaction{
+    .transaction-title{
+        font-size: 3.5rem;
+        color: rgb(0, 0, 0);
+        margin-bottom: 1rem;
+    }
+    .transaction-form{
+        display: flex;
+        flex-direction: column;
+        input{
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            color: rgb(0, 0, 0);
+            font-size: 1.8rem;
+font-weight: medium;
+
+        }
+        input::placeholder{
+            color: rgb(0, 0, 0);
+            font-size: 1.8rem;
+            font-weight: medium;
+        }
+        button{
+            background-color: black;
+            padding: 2rem 5rem;
+            font-size: 3rem;
+            color: white;
+            border: 0px;
+        }
+    }
+}
+}
